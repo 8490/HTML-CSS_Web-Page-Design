@@ -1,0 +1,42 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #A9508B;
+    align-items: center;
+    height: 100px;
+    color: white;
+
+    h1 {
+        margin-left: 20px;        
+    }
+
+    span {
+        color: #A9508B;
+    }
+
+    li {
+        display: inline;
+        padding-right: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    #home {
+        color: #A9508B;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    header {
+        height: 60px;
+        h1 {
+            font-size: 20px;
+        }
+        a{
+            font-size: 12px;
+        }
+    }
+  }

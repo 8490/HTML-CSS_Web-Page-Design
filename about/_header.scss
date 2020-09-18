@@ -1,0 +1,30 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #A9508B;
+    align-items: center;
+    height: 100px;
+    color: white;
+
+    h1 {
+        margin-left: 20px;        
+    }
+
+    span {
+        color: #A9508B;
+    }
+
+    li {
+        display: inline;
+        padding-right: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    #about {
+        color: #A9508B;
+    }
+}
