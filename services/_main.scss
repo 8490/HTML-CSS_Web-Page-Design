@@ -1,116 +1,234 @@
 main {
-    
-    .container1 {
-        display: flex;
-        justify-content: space-between;
-        border-bottom: 2px solid #A9508B;
-        align-items: center;
-        height: 120px;
-        color: white;
+  .container1 {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #a9508b;
+    align-items: center;
+    height: 120px;
+    color: white;
 
-        h2 {
-            margin-left: 20px;
+    h2 {
+      margin-left: 20px;
+    }
+    input {
+      font-size: small;
+      width: 300px;
+      height: 30px;
+      text-indent: 3px;
+      margin-right: 15px;
+    }
+    button {
+      color: white;
+      background-color: rgb(247, 70, 17);
+      border: none;
+      height: 30px;
+      width: 80px;
+      font-size: small;
+      margin-right: 20px;
+    }
+  }
+
+  .container2 {
+    background-color: white;
+    display: grid;
+    height: 800px;
+    width: 100%;
+
+    #section1,
+    #section2,
+    #section3 {
+      background-color: rgb(218, 218, 218);
+      color: black;
+      padding: 20px 20px 40px 20px;
+      margin-bottom: 5px;
+    }
+
+    div {
+      grid-column: 1/3;
+      display: flex;
+      flex-direction: column;
+      margin: 20px;
+      padding: 10px;
+
+      h4 {
+        padding-bottom: 10px;
+      }
+
+      p {
+        padding-bottom: 20px;
+        line-height: 1.5em;
+      }
+    }
+
+    #section4 {
+      grid-column: 3/4;
+      height: 330px;
+      margin: 20px;
+      padding: 10px 10px;
+      background-color: #35424a;
+      color: white;
+
+      h4 {
+        padding: 20px 0;
+      }
+
+      label,
+      textarea,
+      input,
+      button {
+        display: block;
+        padding: 5px 0px;
+      }
+
+      input {
+        width: 500px;
+        height: 20px;
+        font-size: small;
+        text-indent: 0.5em;
+      }
+
+      textarea {
+        width: 500px;
+        height: 30px;
+        font-size: small;
+        text-indent: 0.5em;
+      }
+
+      label {
+        font-size: 15px;
+      }
+
+      button {
+        background-color: rgb(247, 70, 17);
+        border: none;
+        color: white;
+        font-size: small;
+        height: 35px;
+        width: 60px;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  main {
+    .container2 {
+        #section1,
+        #section2,
+        #section3 {
+            padding: 10px 20px;
         }
-        input {
-            font-size: small;
-            width: 300px;
-            height: 30px;
-            text-indent: 3px;
-            margin-right: 15px;
+      #section4 {
+        input,
+        textarea {
+          width: 400px;
         }
-        button {
-            color: white;
-            background-color: rgb(247, 70, 17);
-            border: none;
-            height: 30px;
-            width: 80px;
-            font-size: small;
-            margin-right: 20px;
-        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    .container1 {
+      height: 80px;
+      h2 {
+        font-size: 18px;
+      }
+      input {
+        width: 200px;
+      }
     }
 
     .container2 {
-        background-color: white;
-        display: grid;
-        height: 800px;
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
 
-        #section1, #section2, #section3 {
-            background-color: rgb(218, 218, 218);
-            color: black;
-            padding: 20px 20px 40px 20px;
-            margin-bottom: 5px;
+      #section4 {
+          margin-top: 0;
+        input,
+        textarea {
+          width: 450px;
         }
-
-        div {
-            grid-column: 1/3;
-            display: flex;
-            flex-direction: column;
-            margin: 20px;
-            padding: 10px;
-
-            h4 {
-                padding-bottom: 10px;
-            }
-
-            p {
-                padding-bottom: 20px;
-                line-height: 1.5em;
-            }
-
-        }
-
-        #section4 {
-            grid-column: 3/4;
-            height: 330px;
-            margin: 20px;
-            padding: 10px 10px;
-            background-color: #35424A;
-            color: white;
-
-            h4 {
-                padding: 20px 0;
-            }
-
-            label, textarea, input, button {
-                display: block;
-                padding: 5px 0px;
-            }
-
-            input{
-                width: 500px;
-                height: 20px;
-                font-size: small;
-                text-indent: 0.5em;
-            }
-
-            textarea{
-                width: 500px;
-                height: 30px;
-                font-size: small;
-                text-indent: 0.5em;
-            }
-
-            label {
-                font-size: 15px;
-            }
-
-            button {
-                background-color: rgb(247, 70, 17);
-                border: none;
-                color: white;
-                font-size:small;
-                height: 35px;
-                width: 60px;
-                margin-top: 10px;
-            }
-
-        }
-        
-        
+      }
     }
 
+  }
+}
 
+@media only screen and (max-width: 425px) {
+  main {
+    .container1 {
+      flex-direction: column;
+      justify-content: space-evenly;
 
+      h2 {
+        margin-left: 0px;
+      }
 
+      input {
+        height: 25px;
+      }
+
+      button {
+        height: 25px;
+      }
+    }
+
+    .container2 {
+    
+      #section4 {
+        input,
+        textarea {
+          width: 320px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 375px){
+    main {
+        .container2 {
+    
+            #section4 {
+              input,
+              textarea {
+                width: 290px;
+              }
+            }
+          }
+    }
+}
+
+@media only screen and (max-width: 320px) {
+  main {
+    .container1 {
+      h2 {
+        font-size: 16px;
+      }
+
+      input {
+        width: 160px;
+        font-size: 12px;
+      }
+
+      button {
+        margin-right: 0;
+        font-size: 12px;
+      }
+    }
+    .container2 {
+    
+        #section4 {
+          input,
+          textarea {
+            width: 230px;
+          }
+        }
+      }
+  }
 }

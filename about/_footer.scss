@@ -10,3 +10,36 @@ footer {
         font-size: 18px;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    footer {
+
+        p {
+            padding-top: 20px;
+            font-size: 14px;
+        }
+
+        img {
+            width: 25%;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    footer {
+
+        img {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    footer {
+
+        p {
+            font-size: 12px;
+        }
+    }
+}

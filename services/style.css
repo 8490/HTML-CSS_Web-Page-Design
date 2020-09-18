@@ -386,6 +386,42 @@ header #services {
   color: #A9508B;
 }
 
+@media only screen and (max-width: 1024px) {
+  header h1 {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    height: 60px;
+  }
+  header h1 {
+    font-size: 20px;
+  }
+  header a {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 80px;
+  }
+  header h1 {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  header ul {
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+}
+
 main .container1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -393,7 +429,7 @@ main .container1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-bottom: 2px solid #A9508B;
+  border-bottom: 2px solid #a9508b;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -431,7 +467,9 @@ main .container2 {
   width: 100%;
 }
 
-main .container2 #section1, main .container2 #section2, main .container2 #section3 {
+main .container2 #section1,
+main .container2 #section2,
+main .container2 #section3 {
   background-color: #dadada;
   color: black;
   padding: 20px 20px 40px 20px;
@@ -469,7 +507,7 @@ main .container2 #section4 {
   height: 330px;
   margin: 20px;
   padding: 10px 10px;
-  background-color: #35424A;
+  background-color: #35424a;
   color: white;
 }
 
@@ -477,7 +515,10 @@ main .container2 #section4 h4 {
   padding: 20px 0;
 }
 
-main .container2 #section4 label, main .container2 #section4 textarea, main .container2 #section4 input, main .container2 #section4 button {
+main .container2 #section4 label,
+main .container2 #section4 textarea,
+main .container2 #section4 input,
+main .container2 #section4 button {
   display: block;
   padding: 5px 0px;
 }
@@ -510,6 +551,100 @@ main .container2 #section4 button {
   margin-top: 10px;
 }
 
+@media only screen and (max-width: 1024px) {
+  main .container2 #section1,
+  main .container2 #section2,
+  main .container2 #section3 {
+    padding: 10px 20px;
+  }
+  main .container2 #section4 input,
+  main .container2 #section4 textarea {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main .container1 {
+    height: 80px;
+  }
+  main .container1 h2 {
+    font-size: 18px;
+  }
+  main .container1 input {
+    width: 200px;
+  }
+  main .container2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .container2 #section4 {
+    margin-top: 0;
+  }
+  main .container2 #section4 input,
+  main .container2 #section4 textarea {
+    width: 450px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  main .container1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  main .container1 h2 {
+    margin-left: 0px;
+  }
+  main .container1 input {
+    height: 25px;
+  }
+  main .container1 button {
+    height: 25px;
+  }
+  main .container2 #section4 input,
+  main .container2 #section4 textarea {
+    width: 320px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  main .container2 #section4 input,
+  main .container2 #section4 textarea {
+    width: 290px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  main .container1 h2 {
+    font-size: 16px;
+  }
+  main .container1 input {
+    width: 160px;
+    font-size: 12px;
+  }
+  main .container1 button {
+    margin-right: 0;
+    font-size: 12px;
+  }
+  main .container2 #section4 input,
+  main .container2 #section4 textarea {
+    width: 230px;
+  }
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -530,5 +665,28 @@ footer {
 footer p {
   padding-top: 50px;
   font-size: 18px;
+}
+
+@media only screen and (max-width: 768px) {
+  footer p {
+    padding-top: 20px;
+    font-size: 14px;
+  }
+  footer img {
+    width: 25%;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  footer img {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  footer p {
+    font-size: 12px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

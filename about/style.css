@@ -386,6 +386,42 @@ header #about {
   color: #A9508B;
 }
 
+@media only screen and (max-width: 1024px) {
+  header h1 {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    height: 60px;
+  }
+  header h1 {
+    font-size: 20px;
+  }
+  header a {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 80px;
+  }
+  header h1 {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  header ul {
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+}
+
 main .container1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -474,6 +510,90 @@ main .container2 #section3 h4 {
   padding: 20px 0;
 }
 
+@media only screen and (max-width: 1024px) {
+  main .container2 {
+    height: 500px;
+  }
+  main .container2 p {
+    font-size: 14px;
+  }
+  main .container2 #section3 {
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main .container1 {
+    height: 80px;
+  }
+  main .container1 h2 {
+    font-size: 18px;
+  }
+  main .container1 input {
+    width: 200px;
+  }
+  main .container2 {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  main .container1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  main .container1 h2 {
+    margin-left: 0px;
+  }
+  main .container1 input {
+    height: 25px;
+  }
+  main .container1 button {
+    height: 25px;
+  }
+  main .container2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .container2 div {
+    margin-bottom: 0;
+  }
+  main .container2 #section3 {
+    height: auto;
+    background-color: white;
+    color: black;
+    margin: 0 20px;
+    padding: 10px;
+  }
+  main .container2 #section3 h4 {
+    padding: 10px 0;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  main .container1 h2 {
+    font-size: 16px;
+  }
+  main .container1 input {
+    width: 160px;
+    font-size: 12px;
+  }
+  main .container1 button {
+    margin-right: 0;
+    font-size: 12px;
+  }
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -494,5 +614,28 @@ footer {
 footer p {
   padding-top: 50px;
   font-size: 18px;
+}
+
+@media only screen and (max-width: 768px) {
+  footer p {
+    padding-top: 20px;
+    font-size: 14px;
+  }
+  footer img {
+    width: 25%;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  footer img {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  footer p {
+    font-size: 12px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
